@@ -1,45 +1,143 @@
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 40px 0;
+  padding: 20px;
   text-align: center;
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
-header p {
-  font-size: 1.2em;
+main {
+  padding: 20px;
 }
 
 section {
-  padding: 40px 0;
+  margin-bottom: 40px;
 }
 
-section h2 {
-  text-align: center;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.class {
-  margin-bottom: 20px;
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
   background-color: #333;
   color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 20px 0;
+}
+
+/* Specific styles for sections */
+#about {
+  text-align: center;
+}
+
+#skills ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  #skills ul {
+    flex-direction: column;
+  }
+}
+/* Specific styles for sections */
+#about {
+  text-align: center;
+}
+
+#skills {
+  text-align: center;
+}
+
+#skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.resume {
+  text-align: center;
+}
+
+.contact ul {
+  text-align: center;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+.contact a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  background-color: #555;
 }
